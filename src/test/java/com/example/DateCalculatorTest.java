@@ -19,9 +19,9 @@ public class DateCalculatorTest {
     @DisplayName("두 날짜의 나이 차이")
     void testCalcAge() {
         LocalDate birth = LocalDate.of(1990, 5, 15);
-        LocalDate current = LocalDate.of(2024, 3, 18);
+        LocalDate current = LocalDate.of(2022, 2, 28);
 
-        Assertions.assertEquals(34, dateCalculator.calculateAge(birth, current));
+        Assertions.assertEquals(31, dateCalculator.calculateAge(birth, current));
     }
 
     @Test
